@@ -1,15 +1,17 @@
 # Coding Challenge: Node.js Backend Developer (45 minutes)
 In this challenge, you are required to create a RESTful API using Node.js that interacts with the JSONPlaceholder API (https://jsonplaceholder.typicode.com/).
 
+Feel free to select any other dependencies than the ones mentioned and feel free to reason for why you prefer those.
+
 Tasks:
 1. Project Setup:
-Initialize a new Node.js project. Set up Express.js and install necessary dependencies. Configure nodemon for automatic server restarts during development.
+Initialize a new Node.js project. Set up Express.js and install necessary dependencies. Configure nodemon (or equivalent) for automatic server restarts during development.
 
 2. API Development:
 Create a new endpoint GET /users/:id/posts in your application. This endpoint should accept a user id as a URL parameter, fetch the related user and their posts from the JSONPlaceholder API (https://jsonplaceholder.typicode.com/users/:id and https://jsonplaceholder.typicode.com/posts?userId=:id), and return them as a single JSON object.
 
 3. Data Manipulation:
-For each post fetched, add a new boolean field hasEvenId indicating whether the post's id is an even number. Use Array methods like .map() for this transformation.
+For each post fetched, add a new boolean field hasEvenId indicating whether the post's id is an even number. Use Array methods for this transformation.
 
 4. Error Handling:
 Implement error handling for your API. Ensure your application responds appropriately to potential issues like invalid user IDs, inability to connect to the JSONPlaceholder API, and other unexpected errors.
